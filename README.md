@@ -1,2 +1,0 @@
-# angviz
-Created with CodeSandbox

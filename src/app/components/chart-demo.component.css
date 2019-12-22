@@ -1,0 +1,15 @@
+h1,
+h2,
+p {
+    color: #e3e4dd;
+}
+
+a,
+a:visited {
+    color: #f99f25;
+}
+
+.number-cards {
+    display: block;
+    height: 12.5rem;
+}

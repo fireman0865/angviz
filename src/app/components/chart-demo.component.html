@@ -1,0 +1,37 @@
+<h1>NY State Parks with Playgrounds</h1>
+<p>
+    This demo is using
+    <a href="https://github.com/swimlane/ngx-charts" target="_blank"
+        >ngx-charts</a
+    >
+    to display
+    <a href="https://crossfilter.github.io/crossfilter/" target="_blank"
+        >CrossFilter</a
+    >ed
+    <a
+        href="https://data.ny.gov/Recreation/State-Park-Facility-Points-with-Playgrounds/44wf-4yxs"
+        target="_blank"
+        >NY State Open Data</a
+    >.
+</p>
+
+<h2>Top 5 Counties</h2>
+
+<ngx-charts-number-card
+    class="number-cards"
+    [view]="numberCardView"
+    [results]="topCounties"
+    [scheme]="chartScheme"
+>
+</ngx-charts-number-card>
+
+<h2>All Counties</h2>
+
+<ngx-charts-pie-chart
+    [view]="pieChartView"
+    [results]="allCounties"
+    [scheme]="chartScheme"
+    legend="true"
+    labels="true"
+    doughnut="true"
+></ngx-charts-pie-chart>
